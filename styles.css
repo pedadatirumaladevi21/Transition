@@ -1,0 +1,72 @@
+/* styles.css */
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #D8BFD8;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 50px;
+}
+
+.image-box {
+    width: 300px;
+    height: 320px;
+    background: white;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(255, 255, 0, 1);
+    border: 5px solid black; /* Changed outer border color to black */
+    text-align: center;
+    padding: 10px;
+    color: black;
+    margin: 50px 10px; /* Added small gap on top and adjusted spacing */
+}
+
+.image-box img {
+    width: 280px;
+    height: 260px; /* Reduced height slightly to create gap on top */
+    object-fit: cover;
+    transition: all 2s ease-in-out;
+    border-radius: 8px;
+    border: 3px solid black; /* Changed image border color to black */
+    margin-top: 10px; /* Added space above the image */
+}
+
+.translatex:hover { transform: translateX(100px); }
+.rotate:hover { transform: rotate(360deg); }
+.rotatex:hover { transform: rotateX(360deg); }
+.rotatey:hover { transform: rotateY(360deg); }
+.scalex:hover { transform: scaleX(1.5); }
+.scaley:hover { transform: scaleY(1.5); }
+.skewx:hover { transform: skewX(-25deg); }
+.skewy:hover { transform: skewY(-25deg); }
+.matrix:hover { transform: matrix(0.7, -0.5, 0.5, 0.5, 0.7, 0); }
+.border-radius:hover { border-radius: 50%; }
+.hide:hover { opacity: 0; }
